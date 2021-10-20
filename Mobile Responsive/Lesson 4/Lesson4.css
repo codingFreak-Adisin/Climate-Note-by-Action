@@ -244,3 +244,21 @@ header .navigation a:hover{
   letter-spacing: 2px;
   transition: 0.5%;
 }
+
+.footers{
+  padding: 25px 0;
+  background-color: black;
+}
+
+.footers p{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: white;
+}
+
+@media (max-width: 560px){
+  .footers{
+    padding: 40px;
+  }
+}
