@@ -272,13 +272,14 @@ section{
 }
 .footers{
   padding: 25px 0;
-  background-color: #1680AC;
+  background-color: black;
 }
 
 .footers p{
   margin-top: 15px;
   text-align: center;
   font-size: 13px;
+  color: white;
 }
 
 
