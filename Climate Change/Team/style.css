@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background: black;
+}
+
+h1{
+    font-size: 40px;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 500px;
+    width: 290px;
+    margin: 20px;
+    box-shadow: 0 3px 5px #000;
+    overflow: hidden;
+}

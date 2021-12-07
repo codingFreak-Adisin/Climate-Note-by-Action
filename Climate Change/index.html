@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Note by Action</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./Images & Videos/earth.svg"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N4WQF684HJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N4WQF684HJ');
+</script>
+  </head>
+  <body>
+
+    <header>
+      <a href="#" class="brand">Climate Note by Action</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+            <a href="#">Home</a>
+            <a href="#">Team</a>
+            <a href="#">Feedbacks</a>
+            <a href="./Contact Us/index.html">Contact Us</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="home">
+      <video class="video-slide active" src="./Images & Videos/main_page.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="./Images & Videos/community_page.mp4" autoplay muted loop></video>
+      <div class="content active">
+        <h1>Climate<br><span>Course</span></h1>
+        <p>
+          This is a course, that will teach you all you should basically know about climate change and what major steps to take to improve climate change situations right now. The videos are of 3 – 4 minutes long and completion of course will take you no more than 30 – 40 mins. After every single video, there will be a quiz based on the content of the video, to test your knowledge. You can even access our chat community full of people, climate and sustainability experts who are interested in the same cause as you, who you can talk, network etc. Soon we will have small events every month in the community too which can help you find connections, learn more, share your opinions etc. Our development side is currently working on the chat community
+          </p>
+        <a href="./Sign-Up/index.html">Start Course</a>
+      </div>
+      <div class="content">
+        <h1>Chat<br><span>Community</span></h1>
+        <h2>Under Development</h2>
+        <p>Climate Note Chat Application is not a simple chat application, it's a community in itself, right now we agree that we dont have a lot of users but soon we will have. 
+          Maybe you can be the one to start making the application active, but we assure this that, you will love it. Once we have a larger number of users, you will use it everyday. 
+          Its consists 4 - 5 channels which will be Climate News, Issues, Solutions, General Talk, Feedback etc. This chat application is still under development. So do join our Discord 
+          server in order to get all the updates and happenings at our side. In the chat application, you will be able to talk to people world wide. It will be a community of Climate Change,
+          where people will put there own opnions, bring issues to notice, its solutions etc.</p>
+        <a href="#">Community</a>
+      </div>
+      <div class="media-icons">
+        <a href="https://www.linkedin.com/company/action-for-world/mycompany/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/action.for.world/"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+      </div>
+    </section>
+
+    <section class="footers">
+      <p>
+        Climate Note by Action @ 2021 | All rights reserved
+      </p>
+    </section>
+
+    <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+    //Javacript for video slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function(manual){
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+    </script>
+
+  </body>
+</html>

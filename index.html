@@ -1,112 +1,506 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climate Note by Action</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link rel="shortcut icon" type="image/x-icon" href="./Images & Videos/earth.svg"/>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N4WQF684HJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <title>Climate Note by Action For World</title>
 
-  gtag('config', 'G-N4WQF684HJ');
-</script>
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-    <header>
-      <a href="#" class="brand">Climate Note by Action</a>
-      <div class="menu-btn"></div>
-      <div class="navigation">
-        <div class="navigation-items">
-            <a href="#">Home</a>
-            <a href="#">Team</a>
-            <a href="#">Feedbacks</a>
-            <a href="./Contact Us/index.html">Contact Us</a>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <div class="header-1">
+
+        <a href="#" class="logo"> <i class="fas fa-globe"></i> Action For World</a>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="https://www.instagram.com/action.for.world" class="fab fa-instagram"></a>
+            <a href="https://www.linkedin.com/company/action-for-world" class="fab fa-linkedin"></a>
+            <div id="login-btn" class="fas fa-user"></div>
         </div>
-      </div>
-    </header>
 
-    <section class="home">
-      <video class="video-slide active" src="./Images & Videos/main_page.mp4" autoplay muted loop></video>
-      <video class="video-slide" src="./Images & Videos/community_page.mp4" autoplay muted loop></video>
-      <div class="content active">
-        <h1>Climate<br><span>Course</span></h1>
-        <p>
-          This is a course, that will teach you all you should basically know about climate change and what major steps to take to improve climate change situations right now. The videos are of 3 – 4 minutes long and completion of course will take you no more than 30 – 40 mins. After every single video, there will be a quiz based on the content of the video, to test your knowledge. You can even access our chat community full of people, climate and sustainability experts who are interested in the same cause as you, who you can talk, network etc. Soon we will have small events every month in the community too which can help you find connections, learn more, share your opinions etc. Our development side is currently working on the chat community
-          </p>
-        <a href="./Sign-Up/index.html">Start Course</a>
-      </div>
-      <div class="content">
-        <h1>Chat<br><span>Community</span></h1>
-        <h2>Under Development</h2>
-        <p>Climate Note Chat Application is not a simple chat application, it's a community in itself, right now we agree that we dont have a lot of users but soon we will have. 
-          Maybe you can be the one to start making the application active, but we assure this that, you will love it. Once we have a larger number of users, you will use it everyday. 
-          Its consists 4 - 5 channels which will be Climate News, Issues, Solutions, General Talk, Feedback etc. This chat application is still under development. So do join our Discord 
-          server in order to get all the updates and happenings at our side. In the chat application, you will be able to talk to people world wide. It will be a community of Climate Change,
-          where people will put there own opnions, bring issues to notice, its solutions etc.</p>
-        <a href="#">Community</a>
-      </div>
-      <div class="media-icons">
-        <a href="https://www.linkedin.com/company/action-for-world/mycompany/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/action.for.world/"><i class="fab fa-instagram"></i></a>
-      </div>
-      <div class="slider-navigation">
-        <div class="nav-btn active"></div>
-        <div class="nav-btn"></div>
-      </div>
-    </section>
+    </div>
 
-    <section class="footers">
-      <p>
-        Climate Note by Action @ 2021 | All rights reserved
-      </p>
-    </section>
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#aboutus">About Us</a>
+            <a href="#featured">Courses</a>
+            <a href="#arrivals">Our Team</a>
+            <a href="#reviews">reviews</a>
+        </nav>
+    </div>
 
-    <script type="text/javascript">
-    //Javacript for responsive navigation menu
-    const menuBtn = document.querySelector(".menu-btn");
-    const navigation = document.querySelector(".navigation");
+</header>
 
-    menuBtn.addEventListener("click", () => {
-      menuBtn.classList.toggle("active");
-      navigation.classList.toggle("active");
-    });
+<!-- header section ends -->
 
-    //Javacript for video slider navigation
-    const btns = document.querySelectorAll(".nav-btn");
-    const slides = document.querySelectorAll(".video-slide");
-    const contents = document.querySelectorAll(".content");
+<!-- bottom navbar  -->
 
-    var sliderNav = function(manual){
-      btns.forEach((btn) => {
-        btn.classList.remove("active");
-      });
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#aboutus" class="fas fa-location-arrow"></a>
+    <a href="#featured" class="fas fa-laptop"></a>
+    <a href="#arrivals" class="fas fa-user-friends"></a>
+    <a href="#reviews" class="fas fa-comments"></a>
+</nav>
 
-      slides.forEach((slide) => {
-        slide.classList.remove("active");
-      });
+<!-- login form  -->
 
-      contents.forEach((content) => {
-        content.classList.remove("active");
-      });
+<div class="login-form-container">
 
-      btns[manual].classList.add("active");
-      slides[manual].classList.add("active");
-      contents[manual].classList.add("active");
-    }
+    <div id="close-login-btn" class="fas fa-times"></div>
 
-    btns.forEach((btn, i) => {
-      btn.addEventListener("click", () => {
-        sliderNav(i);
-      });
-    });
-    </script>
+    <form action="">
+        <h3>sign in</h3>
+        <span>username</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="">
+        <span>password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> remember me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn">
+        <p>forget password ? <a href="#">click here</a></p>
+        <p>don't have an account ? <a href="#">create one</a></p>
+    </form>
 
-  </body>
+</div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="row">
+
+        <div class="content">
+            <h3>Climate Note</h3>
+            <p>A Climate Change Course made by Team Action. The course is specially designed for youth but we even have different cirriculums designed for different needs. The course contains of video lectures and quizzes based one the content of the videos</p>
+            <a href="#featured" class="btn">Start Course</a>
+        </div>
+
+        <div class="swiper books-slider">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide"><img src="image/Crash Course.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/Climate Change.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/What is Climate Change.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="image/How to Stop climate change.png" alt=""></a>
+            </div>
+            <img src="image/stand.png" class="stand" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- home section ense  -->
+
+<!-- featured section starts  -->
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"> <span>Courses</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/Climate Change.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Climate Change</h3>
+                    <div class="price">A proper course on climate change, explaining its causes, how to over come it etc (All in one) (Currently Live)<span></span></div>
+                    <a href="./Climate Change/Sign-Up/index.html" class="btn">Take the Course</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/Crash Course.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Crash Course</h3>
+                    <div class="price">A short course on climate change. Can be taken by anyone for basic knowledge of it <b>(Coming Soon!!)</b><span></span></div>
+                    <a href="#" class="btn">Take The Course</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/What is Climate Change.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>What is Climate Change?</h3>
+                    <div class="price">In detail course on what actually is climate change and (global warming),containing quizess after every video lecture<b>(Coming Soon!!)</b><span></span></div>
+                    <a href="#" class="btn">Take The Course</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-search"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="image/How to Stop climate change.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>How to stop Climate Change?</h3>
+                    <div class="price">In detail course on how to stop climate change, containing quizess and projects at end of the course<b>(Coming Soon!!)</b><span></span></div>
+                    <a href="#" class="btn">Take The Course</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-- featured section ends -->
+
+<!-- newsletter section starts -->
+
+<section class="newsletter">
+
+    <form action="">
+        <h3>subscribe for latest updates (Coming Soon!!)</h3>
+        <input type="email" name="" placeholder="enter your email" id="" class="box">
+        <input type="submit" value="subscribe" class="btn">
+    </form>
+
+</section>
+
+<!-- newsletter section ends -->
+
+<!-- arrivals section starts  -->
+
+<section class="arrivals" id="arrivals">
+
+    <h1 class="heading"> <span>Our Team</span> </h1>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/Aditya.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Aditya Sinha</h3>
+                    <div class="price">Vice President & Developer<span></span></div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/Devansh.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Devansh Chaudhary</h3>
+                    <div class="price">Founder & President<span></span></div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/Gouri.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Gouri</h3>
+                    <div class="price">Writing Team & Content Team<span></span></div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/Parth.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Parth Sarap</h3>
+                    <div class="price">Marketing Team<span></span></div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/Samah.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Samah Ayana Kabir</h3>
+                    <div class="price">Marketing Lead & Organizer<span></span></div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/Vanshika.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Vanshika Agarwal</h3>
+                    <div class="price">Marketing Team<span></span></div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/Sheetal.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Sheetal Rajput</h3>
+                    <div class="price">Marketing Team<span></span></div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="image/unknown.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Ankit Kumar</h3>
+                    <div class="price">Marketing Team<span></span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- arrivals section ends -->
+
+<!-- deal section starts  -->
+
+<section class="deal">
+
+    <div class="content" id="aboutus">
+        <h3>Climate Note</h3>
+        <h1>by Action For World</h1>
+        <p>We Are Action For World A Youth-Led Non Profit Organization Working Towards Spreading Awareness About Climate Change, Educating About Climate Change And Environmental Science. We Work On Creating Educational Resources, Course Websites And Running A Community For People Who Are Passionate About Climate. We Are Not Just A Organization We Are A Group Of Teens Coming Together As One To Solve The Climate Crisis.
+
+            Outside Of Climate Change Courses, We Use Various Mediums To Provide Education To All. For Instance, We Run Action Chat Community, Action Climate Blogs, Action Conferencing App And An Active Instagram.</p>
+        <a href="https://actionforworld.netlify.app" class="btn">Our Organization</a>
+    </div>
+
+    <div class="image">
+        <img src="image/Action For World.png" alt="">
+    </div>
+
+</section>
+
+<!-- deal section ends -->
+
+<!-- reviews section starts  -->
+
+<section class="reviews" id="reviews">
+
+    <h1 class="heading"> <span>client's reviews</span> </h1>
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/pic-1.png" alt="">
+                <h3>john deo</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-2.png" alt="">
+                <h3>john deo</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-3.png" alt="">
+                <h3>john deo</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="image/pic-4.png" alt="">
+                <h3>john deo</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-5.png" alt="">
+                <h3>john deo</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-6.png" alt="">
+                <h3>john deo</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</section>
+
+<!-- reviews section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#aboutus"> <i class="fas fa-arrow-right"></i> About Us</a>
+            <a href="#featured"> <i class="fas fa-arrow-right"></i> Courses </a>
+            <a href="#arrivals"> <i class="fas fa-arrow-right"></i> Our Team </a>
+            <a href="#reviews"> <i class="fas fa-arrow-right"></i> Reviews </a>
+        </div>
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +91 9810661564 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +91 9560482505 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> actionecofellowship@gmail.com</a>
+            <img src="image/worldmap.png" class="map" alt="">
+        </div>
+        
+    </div>
+
+    <div class="share">
+        <a href="https://www.instagram.com/action.for.world" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/company/action-for-world" class="fab fa-linkedin"></a>
+    </div>
+
+    <div class="credit"> created by <span> Team Action </span> | all rights reserved 2021 </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- loader  -->
+
+<div class="loader-container">
+    <img src="image/loader-img.gif" alt="">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
 </html>
